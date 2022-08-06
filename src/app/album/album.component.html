@@ -36,8 +36,6 @@
         <div mat-line>
             <mat-card>
                 <mat-card-content>{{track.track_number}}: {{track.name}} - {{(track.duration_ms/60000).toFixed(2)}}
-                    <!-- NOTE 3.34 was determined by using (duration_ms / 60000).toFixed(2) -->
-
                     <div *ngIf="track.preview_url"><br /><audio controls [src]="track.preview_url"></audio></div>
 
                 </mat-card-content>

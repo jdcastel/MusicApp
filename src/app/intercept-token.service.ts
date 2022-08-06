@@ -22,6 +22,4 @@ export class InterceptTokenService {
 
     return next.handle(request);
   }
-
-
 }

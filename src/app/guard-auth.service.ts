@@ -17,5 +17,4 @@ export class GuardAuthService {
     }
     return true;
   }
-  
 }

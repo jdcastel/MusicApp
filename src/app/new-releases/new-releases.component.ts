@@ -23,5 +23,4 @@ export class NewReleasesComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.dataSub.unsubscribe();
   }
-
 }

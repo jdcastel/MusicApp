@@ -35,14 +35,11 @@ export class SpotifyTokenService implements OnDestroy {
   getBearerToken(): Observable<any> {
 
     if (!this.accessToken) { 
-      // no access token, so get a fresh one
       return this.getAccessToken();
     } else { 
-      if (new Date() < this.accessTokenExpires) { 
-        // access token exists and is valid, so return it
+      if (new Date() < this.accessTokenExpires) {
         return new Observable(o => o.next(this.accessToken));
       } else { 
-        // access token exists, but is no longer valid, so get a fresh one
         return this.getAccessToken(); 
       }
     }

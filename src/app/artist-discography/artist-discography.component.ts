@@ -37,5 +37,4 @@ export class ArtistDiscographyComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.paramSub.unsubscribe();
   }
-
 }

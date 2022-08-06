@@ -14,9 +14,8 @@
                     <mat-card-subtitle>New Release</mat-card-subtitle>
                 </mat-card-header>
                 <img mat-card-image class="album-cover" src="{{ release.images[0].url }}" alt="album art "
-                    [routerLink]="['/album', release.id]"><!-- ", release.id" removed -->
+                    [routerLink]="['/album', release.id]">
                 <strong>Release Date: </strong>{{release.release_date | date: "shortDate"}}<br />
-                <!-- date:"shortDate" converts the yyyy-mm-dd to m/dd/yy-->
                 <strong>Tracks: </strong>{{release.total_tracks}}<br /><br />
                 <mat-card-content>
                     <mat-chip-list aria-label="Artist selection">
@@ -26,7 +25,6 @@
                 </mat-card-content>
             </mat-card>
         </div>
-        <!-- -->
 
     </div>
 </div>
